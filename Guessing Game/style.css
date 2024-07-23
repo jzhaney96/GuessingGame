@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFD700; /* Use hex code for gold color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use viewport height for full-screen height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px; /* Slightly increase border radius */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow with less spread */
+    text-align: center;
+    width: 320px;
+    max-width: 90%;
+    transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.container:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px; /* Slightly smaller font size for better readability */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Add border to inputs */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 70%;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #007BFF; /* Use a slightly lighter blue */
+    border: 2px solid #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for background and color */
+}
+
+button:hover {
+    background-color: #fff;
+    color: #007BFF;
+    border-color: #007BFF; /* Keep border color consistent on hover */
+}
